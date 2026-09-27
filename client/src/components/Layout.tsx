@@ -15,16 +15,15 @@ export function TopNav({ currentView, onViewChange }: TopNavProps) {
   return (
     <header className="app-header">
       <div className="app-brand flex items-center gap-8">
-        <div
-          className="bg-accent text-white flex items-center justify-center font-bold flex-shrink-0"
+        <img
+          src="/favicon.svg"
+          alt="Slopper logo"
+          className="flex-shrink-0"
           style={{ width: 36, height: 36, borderRadius: 'var(--radius-md)' }}
-          aria-hidden
-        >
-          N
-        </div>
+        />
         <div className="min-w-0">
-          <h1 className="app-brand__title font-bold tracking-tight">Nutrition Facts</h1>
-          <p className="text-xs text-muted">Editorial Nutrition & Comparison Tool</p>
+          <h1 className="app-brand__title font-bold tracking-tight">Slopper</h1>
+          <p className="text-xs text-muted">Nutrition search & comparison</p>
         </div>
       </div>
 
